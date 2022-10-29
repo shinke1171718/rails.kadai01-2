@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp012</title>
+    <title>Myapp15</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,8 +9,26 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+    <h1>Ruby on Rails スケジュール管理アプリ</h1>
+  </header>
   <body>
     <%= yield %>
   </body>
+  <footer>
+    <p>現在の日時 : <span id="text"></span>　　スケジュール合計 : <%= Post.count %></p>
+
+    <script type="text/javascript">
+    document.getElementById("text").innerHTML = today();
+      function today() {
+        var date = new Date();
+        var year_str = date.getFullYear();
+        var month_str = date.getMonth()+1;
+        var day_str = date.getDate();
+
+        var day =  year_str + "年" + month_str + "月" + day_str + "日"
+        return day;
+      }
+    </script>
+  </footer>
 </html>

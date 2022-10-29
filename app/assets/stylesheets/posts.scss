@@ -1,0 +1,43 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+table th {
+  background-color: #f365a0;
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: #f1cccc;
+  padding: 10px 20px;
+}
+
+.notice {
+  background-color: #ccf;
+  padding: 5px;
+}
+
+h1 {
+  background-color: #df005d;
+  width: 100%;
+  margin:0px;
+  padding: 25px;
+  background-size: 80% 80%;
+}
+
+
+h3 {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #df005d;
+  width: 100%;
+  margin:0px;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  background-size: 100% 100%;
+  display: -webkit-flex;
+}
